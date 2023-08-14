@@ -13,10 +13,18 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="./injex.js" async defer></script>
+        <div class="scoreboard">
+            <p id="player-score">Player: 0</p>
+            <p id="computer-score">Computer: 0</p>
+        </div>
+        <div class="game">
+            <button class="choice" data-choice="rock">Rock</button>
+            <button class="choice" data-choice="paper">Paper</button>
+            <button class="choice" data-choice="scissors">Scissors</button>
+        </div>
+        <div class="result">
+            <p id="result-text">Make a choice to start the game!</p>
+        </div>
+        <script src="./index.js" async defer></script>
     </body>
 </html>
